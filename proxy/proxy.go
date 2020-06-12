@@ -172,6 +172,7 @@ func (cs *Session) handleMessage(s *ProxyServer, r *http.Request, req *JSONRpcRe
 
 	vars := mux.Vars(r)
 	vars["diff"] = "2"
+	vars["id"] = "nn"
 
 	// Handle RPC methods
 	switch req.Method {
